@@ -5,7 +5,8 @@ with open("input") as f:
     draw_numbers = list(map(int, f.readline().split(',')))
     inputs = [int(i) for i in f.read().split() if i != '']
 
-puzzles = [[inputs[x:x + 5] for x in range(0, len(inputs), 5)][j:j + 5] for j in range(0, len(inputs), 5)]
+pzl = [inputs[x:x + 5] for x in range(0, len(inputs), 5)]
+puzzles = [pzl[x:x + 5] for x in range(0, len(pzl), 5)]
 
 
 class Board:
