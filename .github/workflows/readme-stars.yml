@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: k2bd/advent-readme-stars@v1
+      - uses: k2bd/advent-readme-stars@v1.0.1
         with:
           userId: 479379
           sessionCookie: ${{ secrets.AOC_SESSION }}
